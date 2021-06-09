@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: right;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #1ce0c0;
+  color: white;
+}
+
+.container {
+  padding: 0 14px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(255, 0, 200);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(209, 40, 40);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: black(170, 36, 148);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Me</h1>
+  <p>We're learning HTML, CSS, JavaScript, Angular and ServiceNow.</p>
+  <p>In 3 weeks.</p>
+</div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.ajc.com/resizer/tzATGUWSV_qz4mmbprQ4KaGjQNY=/1066x600/cloudfront-us-east-1.images.arcpublishing.com/ajc/NNVIWL6IENQ7C3S256IFHC2FOM.jpg" alt="Dalona" style="width:100%">
+      <div class="container">
+        <h2>Dalona Sherice Morgan</h2>
+        <p class="title">TCP Trainee</p>
+        <p>I love everything tech!</p>
+        <p>info@dsherice.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
